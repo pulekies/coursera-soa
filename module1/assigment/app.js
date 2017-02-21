@@ -6,7 +6,7 @@ var app = angular.module('LunchCheck', []);
 var LunchMessages = {
   NoData: "Please enter data first!",
   Enjoy: "Enjoy!",
-  TooMuch: "TooMuch"
+  TooMuch: "Too much!"
 }
 
 app.controller('LunchCheckController', LunchCheckController);
