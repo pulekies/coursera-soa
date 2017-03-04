@@ -1,19 +1,13 @@
-/*
 (function () {
 'use strict';
 
-var app = angular.module('DIApp', []);
+var app = angular.module('UrbanYogaApp', []);
 
-// // option 1
-// app.controller('DIController', [ '$scope', '$filter', DIController]);
-
-
-// option 2
-app.controller('DIController', DIController);
-DIController.$inject = ['$scope', '$filter'];
+app.controller('UrbanYogaController', UrbanYogaController);
+UrbanYogaController.$inject = ['$scope', '$filter'];
 
 
-function DIController($scope, $filter) {
+function UrbanYogaController($scope, $filter) {
   $scope.name = "Pule";
 
   $scope.upper = function() {
@@ -22,6 +16,4 @@ function DIController($scope, $filter) {
   }
 };
 
-})();*/
-
-!function(){"use strict";function e(n,o,r){n.name="Pule",n.upper=function(){var e=o("uppercase");n.name=e(n.name)},console.log(r.annotate(e))}var n=angular.module("DIApp",[]);n.controller("DIController",["$scope","$filter","$injector",e])}();
+})();

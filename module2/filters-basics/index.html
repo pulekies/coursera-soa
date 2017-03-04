@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="MsgApp">
+  <head>
+    <meta charset="utf-8">
+  
+    <title>Expressions and interpolation</title>
+  </head>
+  <body ng-controller="MsgController">
+    <h1>Expressions and interpolation</h1>
+    <div>
+      {{name}} has a message for you: <br>
+      {{sayMessage()}} <br>
+      Each cracker costs {{ crackerCost | currency : "Dollarz" : 4 }}
+
+      <div>
+        <button ng-click="increaseImageHeight()">Increase image height</Button>
+          <br>
+          <img ng-src="http://placehold.it/350x{{imageHeight}}">
+      </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
